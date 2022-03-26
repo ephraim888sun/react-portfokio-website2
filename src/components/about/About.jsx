@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './about.css'
 import Award from '../../img/award.png'
+import { ThemeContext } from '../../context';
 
 const About = () => {
+    const theme = useContext(ThemeContext);
+    const blueMode = theme.state.blueMode;
+
+
     return (
         <div className='a'>
             <div className="a-left">
-                <div className="a-card bg"></div>
+                <div
+                    className="a-card bg"
+                    style={{ backgroundColor: blueMode ? '#0033A0' : "#C8102E", }}></div>
                 <div className="a-card">
                     <img src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="a-img" />
                 </div>
@@ -27,7 +34,9 @@ const About = () => {
                 <div className="a-award">
                     <img src={Award} alt="" className="a-award-img" />
                     <div className="a-award-texts">
-                        <h4 className="a-award-title">International Design Awards 2021</h4>
+                        <h4
+                            className="a-award-title"
+                            style={{ color: blueMode ? '#0033A0' : "#C8102E", }}>International Design Awards 2021</h4>
                         <p className="a-award-desc">
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
                             and fugit.

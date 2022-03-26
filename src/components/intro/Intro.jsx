@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './intro.css'
 import Me from "../../img/me.png"
+import { ThemeContext } from '../../context';
 
 const Intro = () => {
+
+    const theme = useContext(ThemeContext);
+    const blueMode = theme.state.blueMode;
+
     return (
         <div className='i'>
             <div className="i-left">
@@ -11,11 +16,25 @@ const Intro = () => {
                     <h1 className='i-name'>Ephraim Sun</h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Web Developer</div>
-                            <div className="i-title-item">UI/UX Designer</div>
-                            <div className="i-title-item">Photographer</div>
-                            <div className="i-title-item">Writer</div>
-                            <div className="i-title-item">Content Creator</div>
+                            <div
+                                className="i-title-item"
+                                style={{ color: blueMode ? '#0033A0' : "#C8102E", }}>Web Developer</div>
+                            <div
+                                className="i-title-item"
+                                style={{ color: blueMode ? '#0033A0' : "#C8102E", }}
+                            >UI/UX Designer</div>
+                            <div
+                                className="i-title-item"
+                                style={{ color: blueMode ? '#0033A0' : "#C8102E", }}
+                            >Photographer</div>
+                            <div
+                                className="i-title-item"
+                                style={{ color: blueMode ? '#0033A0' : "#C8102E", }}
+                            >Writer</div>
+                            <div
+                                className="i-title-item"
+                                style={{ color: blueMode ? '#0033A0' : "#C8102E", }}
+                            >Content Creator</div>
                         </div>
                     </div>
                     <p className="i-desc">
@@ -29,9 +48,9 @@ const Intro = () => {
                     height="75"
                     viewBox="0 0 75 75"
                     fill="none"
-                    stroke="#C8102E"
                     className="i-scroll"
                     xmlns="http://www.w3.org/2000/svg"
+                    style={blueMode ? { stroke: '#0033A0' } : { stroke: '#C8102E' }}
                 >
                     <g id="scroll">
                         <path
@@ -83,7 +102,10 @@ const Intro = () => {
             </div>
 
             <div className="i-right">
-                <div className="i-bg"></div>
+                <div
+                    className="i-bg"
+                    style={{ backgroundColor: blueMode ? '#0033A0' : "#C8102E", }}
+                ></div>
                 <img src={Me} alt="" className="i-img" />
             </div>
 

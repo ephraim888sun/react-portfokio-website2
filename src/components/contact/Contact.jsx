@@ -1,11 +1,15 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import './contact.css'
 import Phone from "../../img/phone.png"
 import Email from "../../img/email.png"
 import Address from "../../img/address.png"
 import emailjs from '@emailjs/browser';
+import { ThemeContext } from '../../context'
 
 const Contact = () => {
+  const theme = useContext(ThemeContext);
+  const blueMode = theme.state.blueMode;
+
 
   const formRef = useRef();
   const [done, setDone] = useState(false);
@@ -24,7 +28,9 @@ const Contact = () => {
 
   return (
     <div className='c'>
-      <div className="c-bg"></div>
+      <div
+        className="c-bg"
+        style={{ backgroundColor: blueMode ? '#0033A0' : "#C8102E", }}></div>
       <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">Let's discuss your project</h1>
@@ -46,7 +52,9 @@ const Contact = () => {
 
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
+            <b
+              style={{ color: blueMode ? '#0033A0' : "#C8102E", }}
+            >What’s your story?</b> Get in touch. Always available for
             freelancing if the right project comes along. me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
@@ -54,7 +62,9 @@ const Contact = () => {
             <input type="text" placeholder='Subject' name='user_subject' />
             <input type="text" placeholder='Email' name='user_email' />
             <textarea rows="5" placeholder='Message' name="message" />
-            <button>Submit</button>
+            <button
+              style={{ backgroundColor: blueMode ? '#0033A0' : "#C8102E", }}
+            >Submit</button>
             {done && "Thank you..."}
           </form>
         </div>
