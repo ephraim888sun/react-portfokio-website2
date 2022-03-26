@@ -18,24 +18,24 @@ Designed a Responsive React Project using functional components, React Hooks, an
 
 ### Intro Page
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/red/Intro.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/red/Intro.jpg?raw=true)
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/blue/Intro.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/blue/Intro.jpg?raw=true)
 
 ### About
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/red/About.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/red/About.jpg?raw=true)
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/blue/About.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/blue/About.jpg?raw=true)
 
 ### Product
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/red/Product.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/red/Product.jpg?raw=true)
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/blue/Product.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/blue/Product.jpg?raw=true)
 
 ### Contact
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/red/Contact.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/red/Contact.jpg?raw=true)
 
-![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/master/public/websiteImg/blue/Contact.jpg?raw=true)
+![alt text](https://github.com/ephraim888sun/react-portfolio-website2/blob/main/public/websiteImg/blue/Contact.jpg?raw=true)
