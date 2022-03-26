@@ -2,14 +2,13 @@
     width: 30%;
     height: 40vh;
     margin: 20px 10px;
-    border: 2px solid #C8102E;
+    border: 2px solid;
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
 }
 
 .p-browser {
     height: 20px;
-    background-color: #C8102E;
     display: flex;
     align-items: center;
     position: sticky;
@@ -31,4 +30,18 @@
 
 .p:hover .p-img {
     transform: translateY(-100%);
+}
+
+@media screen and (max-width: 480px) {
+
+    .p {
+        width: 100%;
+        height: auto;
+        margin: 20px 0px;
+    }
+
+    .p-browser {
+        display: none;
+    }
+
 }

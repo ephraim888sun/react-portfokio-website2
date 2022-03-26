@@ -7,8 +7,6 @@
     width: 20px;
     height: 100%;
     position: absolute;
-    background-color: #C8102E;
-
 }
 
 .c-wrapper {
@@ -76,12 +74,44 @@ textarea {
 button {
     border: none;
     padding: 15px;
-    background-color: #C8102E;
     color: white;
     font-weight: 500;
     cursor: pointer;
 }
 
-b {
-    color: #C8102E;
+@media screen and (max-width: 480px) {
+    .c-wrapper {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .c-title {
+        font-size: 30px;
+    }
+
+    .c-info-item {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .c-desc {
+        display: none;
+    }
+
+    form {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
 }
